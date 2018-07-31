@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  width:100%;
+  height: 740px;
+  background-color: #e8ebeb;
 }
 
 .App-logo {
@@ -20,6 +23,32 @@
 
 .App-intro {
   font-size: large;
+}
+
+.container {
+  display: inline-block;
+  width: 90%;
+  height: 600px;
+  background-color: #fff;
+  position: relative;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+}
+
+.container>.inner {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.search-list {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-color: #e95452
 }
 
 @keyframes App-logo-spin {
