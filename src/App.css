@@ -89,13 +89,54 @@
     height: 85%;
     background-color: #fff;
     padding: 20px 10px;
+    text-align: center;
     box-sizing: inherit;
     border-radius: 5px;
+}
+
+.list-ol {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-size:16px;
 }
 
 .list-ol>li {
     line-height: 30px;
     cursor: pointer;
+    padding: 10px 10px;
+    list-style-type: none;
+    white-space: pre-wrap;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.list-ol>li:hover {
+    background-color: #dcdee6;
+}
+
+.list-ol>li>.JPN {
+    width: 33%;
+    color: #333;
+    text-align: left;
+}
+
+.list-ol>li>.CHN {
+    width: 33%;
+    color: #8e9090;
+    text-align: left;
+    font-size:12px;
+}
+
+.list-ol>li>.EN {
+    width: 33%;
+    color: #8e9090;
+    text-align: left;
+    font-size:12px;
+}
+
+.list-ol>li>div {
+    /*padding:0 8px;*/
 }
 
 .map {

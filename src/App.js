@@ -3,60 +3,91 @@ import React, { Component } from 'react';
 import './App.css';
 import List from './list.js';
 import GoogleMap from './map.js';
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 class App extends Component {
 
     state = {
-      data :{
-        "tokyo":{
-          "title": "東京駅",
-          "map": "map",
-          "positon": {
-            "lat": 35.681167,
-            "lng": 139.7670516
-          }
+      data :[
+      {
+        "id":"tokyo",
+        "title": {
+          "CHN":"东京站",
+          "JPN":"東京駅",
+          "EN":"tokyo"
         },
-        "sinjyuku":{
-          "title": "新宿駅", 
-          "map": "map",
-          "positon": {
-            "lat" : 35.6895924,
-            "lng" : 139.7004131
-          }
+        "map": "map",
+        "positon": {
+          "lat": 35.681167,
+          "lng": 139.7670516
+        }
+      },
+      {
+        "id":"sinjyuku",
+        "title": {
+          "CHN":"新宿站",
+          "JPN":"新宿駅",
+          "EN":"sinjuku"
         },
-        "ikebukuro":{
-          "title": "池袋駅",
-          "map": "map",
-          "positon": {
-            "lat" : 35.7295028,
-            "lng" : 139.7109001
-          }
+        "map": "map",
+        "positon": {
+          "lat" : 35.6895924,
+          "lng" : 139.7004131
+        }
+      },
+      {
+        "id":"ikebukuro",
+        "title": {
+          "CHN":"池袋站",
+          "JPN":"池袋駅",
+          "EN":"ikebukuro"
         },
-        "shibuya":{
-          "title": "渋谷駅",
-          "map": "map",
-          "positon": {
-            "lat" : 35.6580339,
-            "lng" : 139.7016358
-          }
+        "map": "map",
+        "positon": {
+          "lat" : 35.7295028,
+          "lng" : 139.7109001
+        }
+      },
+      {
+        "id":"shibuya",
+        "title": {
+          "CHN":"涩谷站",
+          "JPN":"渋谷駅",
+          "EN":"shibuya"
         },
-        "harajyuku":{
-          "title": "原宿駅",
-          "map": "map",
-          "positon": {
-            "lat" : 35.6702285,
-            "lng" : 139.7026976
-          }
+        "map": "map",
+        "positon": {
+          "lat" : 35.6580339,
+          "lng" : 139.7016358
+        }
+      },
+      {
+        "id":"harajyuku",
+        "title": {
+          "CHN":"原宿站",
+          "JPN":"原宿駅",
+          "EN":"harajuku"
         },
-        "ginza":{
-          "title": "銀座駅",
-          "map": "map",
-          "positon": {
-            "lat" : 35.6717519,
-            "lng" : 139.7643082
-          }
+        "map": "map",
+        "positon": {
+          "lat" : 35.6702285,
+          "lng" : 139.7026976
+        }
+      },
+      {
+        "id":"ginza",
+        "title": {
+          "CHN":"银座站",
+          "JPN":"銀座駅",
+          "EN":"ginza"
         },
+        "map": "map",
+        "positon": {
+          "lat" : 35.6717519,
+          "lng" : 139.7643082
+        }
       }
+      ]
   }
 
   render() {
@@ -68,8 +99,8 @@ class App extends Component {
         </header>
         <div className="container">
           <div className="inner">
-            <List data={this.state.data}/>
-            <GoogleMap  data={this.state.data}/>
+            <List mapData={this.state.data} />
+            <GoogleMap  mapData={this.state.data} />
           </div>
         </div>
       </div>
@@ -78,3 +109,7 @@ class App extends Component {
 }
 
 export default App;
+export default GoogleApiWrapper({
+  apiKey:"AIzaSyB8A9ayd3v75pU2QAnOAh1SMBidZ9dfieo",
+  language:"zh-cn"
+})
