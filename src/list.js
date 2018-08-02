@@ -10,11 +10,9 @@ class List extends Component {
     return (
     			<div className="search-list">
       				<div className="search-area">
-     					<div className="search-bar">
-       						<input type="text" className="serach-input" value="" placeholder="search the station (example : tokyo)"/>
-       						<button className="search-btn">
+       						<input type="text" className="serach-input" value="" placeholder="search (example : tokyo)"/>
+       						<button className="search-btn">Search
        						</button>
-       					</div>
        				</div>
        				<div className="list">
        					<ol className="list-ol">

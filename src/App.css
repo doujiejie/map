@@ -1,73 +1,116 @@
 .App {
-  text-align: center;
-  width:100%;
-  height: 740px;
-  background-color: #e8ebeb;
-  box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: 740px;
+    background-color: #ebeff3;
+    box-sizing: border-box;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #333;
-  line-height: 50px;
-  padding: 10px;
-  color: white;
+    background-color: #59aed0;
+    line-height: 50px;
+    padding: 10px;
+    color: white;
+}
+
+.App-header h1 {
+    font-size: 36px;
+    margin: 10px auto;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 .container {
-  display: inline-block;
-  width: 90%;
-  height: 600px;
-  background-color: #fff;
-  position: relative;
-  margin: 20px auto 0 auto;
-  padding: 20px;
-  box-sizing: inherit;
+    display: inline-block;
+    width: 95%;
+    height: 600px;
+    background-color: #ebeff3;
+    position: relative;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    box-sizing: inherit;
 }
 
 .container>.inner {
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  box-sizing: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: inherit;
 }
 
 .search-list {
-  display: block;
-  width: 30%;
-  height: 100%;
-  background-color: #333;
-  padding:14px 8px;
-  box-sizing: inherit;
+    display: block;
+    width: 30%;
+    height: 100%;
+    box-sizing: inherit;
+    margin-right: 20px;
 }
 
 .search-area {
-  
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #c2c3c7;
+    margin-bottom: 20px;
+}
+
+.serach-input {
+    margin-right: 10px;
+    width: 70%;
+}
+
+.search-btn {
+    width: 30%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.list {
+    display: block;
+    width: 100%;
+    height: 85%;
+    background-color: #fff;
+    padding: 20px 10px;
+    box-sizing: inherit;
+    border-radius: 5px;
+}
+
+.list-ol>li {
+    line-height: 30px;
+    cursor: pointer;
 }
 
 .map {
-  display: block;
-  width: 70%;
-  height: 100%;
-  background-color: #A1B8D8;
-  box-sizing: inherit;
+    display: block;
+    width: 70%;
+    height: 100%;
+    box-sizing: inherit;
+    padding: 0px;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
