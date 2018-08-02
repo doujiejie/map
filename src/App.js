@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import list from './list.js';
-import map from './map.js';
+import List from './list.js';
+import GoogleMap from './map.js';
 
 class App extends Component {
 
@@ -68,8 +68,8 @@ class App extends Component {
         </header>
         <div className="container">
           <div className="inner">
-            <list data={this.state.data}/>
-            <map  data={this.state.data}/>
+            <List data={this.state.data}/>
+            <GoogleMap  data={this.state.data}/>
           </div>
         </div>
       </div>

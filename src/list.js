@@ -8,8 +8,6 @@ class List extends Component {
   	const { data } = this.props;
   	const { query } = this.state;
     return (
-    	data.map((data)=> {
-    		return (
     			<div className="search-list">
       				<div className="search-area">
      					<div className="search-bar">
@@ -24,9 +22,7 @@ class List extends Component {
        					</ol>
       				</div>
       			</div>
-    		)
-    	})
-    );
+            )
   }
 }
 

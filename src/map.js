@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Map extends Component {
+class GoogleMap extends Component {
     state = {
   }
   render() {
@@ -12,4 +12,4 @@ class Map extends Component {
   }
 }
 
-export default Map;
+export default GoogleMap;
