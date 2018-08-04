@@ -9,7 +9,7 @@ class List extends Component {
     }
   render() {
 
-  	const { mapData } = this.props;
+  	const { positionData } = this.props;
   	const { query } = this.state;
 
     return (
@@ -21,7 +21,7 @@ class List extends Component {
               </div>
               <div className="list">
                 <ol className="list-ol">
-                  {mapData.map((data) => (
+                  {positionData.map((data) => (
                     <li key={data.id}>
                      <div className="JPN">{data.title.JPN}</div>
                      <div className="CHN">(CHN: {data.title.CHN})</div>

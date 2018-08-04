@@ -98,7 +98,7 @@
     padding: 0px;
     margin: 0px;
     height: 100%;
-    font-size:16px;
+    font-size: 16px;
 }
 
 .list-ol>li {
@@ -125,14 +125,14 @@
     width: 33%;
     color: #8e9090;
     text-align: left;
-    font-size:12px;
+    font-size: 12px;
 }
 
 .list-ol>li>.EN {
     width: 33%;
     color: #8e9090;
     text-align: left;
-    font-size:12px;
+    font-size: 12px;
 }
 
 .list-ol>li>div {
@@ -141,8 +141,9 @@
 
 .map {
     display: block;
-    width: 70%;
-    height: 100%;
+    position: absolute;
+    width: 65%;
+    height: 93%;
     box-sizing: inherit;
     padding: 0px;
 }

@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import List from './list.js';
-import GoogleMap from './map.js';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import GoogleAPI from './googleAPI.js';
 
 class App extends Component {
 
@@ -99,8 +98,8 @@ class App extends Component {
         </header>
         <div className="container">
           <div className="inner">
-            <List mapData={this.state.data} />
-            <GoogleMap  mapData={this.state.data} />
+            <List positionData={this.state.data} />
+            <GoogleAPI  positionData={this.state.data} />
           </div>
         </div>
       </div>
@@ -109,7 +108,3 @@ class App extends Component {
 }
 
 export default App;
-export default GoogleApiWrapper({
-  apiKey:"AIzaSyB8A9ayd3v75pU2QAnOAh1SMBidZ9dfieo",
-  language:"zh-cn"
-})
